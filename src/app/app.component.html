@@ -1,0 +1,13 @@
+<section>
+  <div class="container">
+    <h3 class="display">
+      {{ hours }}:{{ minutes }}:{{ seconds }}
+    </h3>
+    <div class="buttons">
+      <button (click)="start()" [disabled]="timerRuns">Start</button>
+      <button (click)="stop()">Stop</button>
+      <button (dblclick)="wait()">Wait</button>
+      <button (click)="reset()">Reset</button>
+    </div>
+  </div>
+</section>
